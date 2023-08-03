@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./dist/index.bundle.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="startGame" class="game-status">START GAME</div>
+        <div id="scoreDiv" class="hide">
+            <div class="col">
+                <div class="score">1UP</div>
+                <div id="score" class="score"></div>
+            </div>
+            <div class="col">
+                <div class="score">HIGH SCORE</div>
+                <div id="highscore" class="score"></div>
+            </div>
+        </div>
+        <div id="game">
+            <div id="fruit" class="hide"></div>
+        </div>
+        <div id="liveContainer" class="hide">
+            <div id="lives"></div>
+        </div>
+    </div>
+</body>
+
+</html>
