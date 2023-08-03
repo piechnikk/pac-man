@@ -1,0 +1,168 @@
+@font-face {
+    font-family: emulogic;
+    src: url(./fonts/emulogic.ttf) format("opentype");
+}
+
+* {
+    box-sizing: border-box;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+body{
+    background-color: black;
+}
+
+#container{
+    width: 224px;
+    left: 112px;
+    top: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: scale(2);
+}
+  
+#game {
+    position: relative;
+    display: inline-grid;
+    background: url("./assets/main.png") -228px 0;
+}
+
+#startGame{
+    cursor: pointer;
+    top: 0;
+}
+
+.game-status {
+    position: absolute;
+    top: 92px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: emulogic;
+    font-size: 18px;
+    background-color: black;
+    border: 3px solid rgb(33,33,255);
+    padding: 12px 0;
+    width: 90%;
+    margin: 5%;
+    border-radius: 12px;
+
+}
+
+#scoreDiv{
+    display: flex;
+    align-items: center;
+    width: 224px;
+    height: 16px;
+    margin-bottom: 8px;
+    background: black;
+    color: white;
+    font-size: 8px;
+    font-family: emulogic;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 26px 0 10px;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    background: black;
+    color: white;
+    font-size: 8px;
+    font-family: emulogic;
+}
+  
+/* #start-button {
+    margin-top: 20px;
+} */
+  
+.hide {
+    display: none !important; 
+}
+  
+.square {
+    display: block;
+}
+  
+/* .blank {
+    background: black;
+} */
+  
+.dot {
+    background: url("./assets/dot.png") 0 0;
+}
+
+.points {
+    background-image: url("./assets/points.png")!important;
+}
+.points1 {
+    background-image: url("./assets/points1.png")!important;
+}
+  
+.pill {
+    background: url("./assets/pill.png") 0 0;
+}
+
+.pacman {
+    background-image: url("./assets/pacman.png");
+    position: absolute;
+    z-index: 1;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.ghost {
+    position: absolute;
+    width: 16px !important;
+    height: 16px !important;
+}
+  
+.blinky {
+    background-image: url("./assets/blinky.png");
+}
+  
+.pinky {
+    background-image: url("./assets/pinky.png");
+}
+  
+.inky {
+    background-image: url("./assets/inky.png");
+}
+  
+.clyde {
+    background-image: url("./assets/clyde.png");
+}
+
+#lives{
+    /* position: relative; */
+    background-image: url("./assets/lives.png");
+    width: 80px;
+    height: 16px;
+    margin-left: 16px;
+    background-position-y: -48px;
+}
+
+#liveContainer{
+    width: 224px;
+}
+
+#fruit{
+    position: absolute;
+    background-image: url("./assets/fruits.png");
+    width: 16px;
+    height: 16px;
+    top: 132px;
+    left: 104px;
+}
